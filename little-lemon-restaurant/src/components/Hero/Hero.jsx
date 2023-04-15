@@ -9,3 +9,5 @@ export default function Hero() {
     </>
   );
 }
+
+// need to create CSS file
