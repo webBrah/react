@@ -1,4 +1,4 @@
-import "./Header.css"
+import './Header.css';
 
 export default function Header() {
   return (
@@ -7,14 +7,22 @@ export default function Header() {
         <div className="logo">
           <h1>Little Lemon Restaurant</h1>
         </div>
-        <div className="nav-menu">
+        <nav>
           <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
-            <li>Link 4</li>
+            <li>
+              <a href="/home">Homepage</a>
+            </li>
+            <li>
+              <a href="/about">About Us</a>
+            </li>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
+            <li>
+            <a href="/book" role="button">Book a table</a>
+            </li>
           </ul>
-        </div>
+        </nav>
       </header>
     </>
   );
