@@ -1,4 +1,5 @@
 import './App.css';
+import CustomersSay from './components/CustomersSay/CustomersSay';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero.jsx';
 import Hompage from './components/Homepage/Homepage';
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Hompage />
       <Specials />
+      <CustomersSay />
     </>
   );
 }
