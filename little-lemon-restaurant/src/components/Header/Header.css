@@ -1,44 +1,50 @@
-/* Container for the header */
-.header {
-  display: flex; /* Use Flexbox */
-  justify-content: space-between; /* Distribute space between the heading and nav menu */
-  align-items: center; /* Align items vertically in the center */
-  padding: 20px; /* Add some padding */
-  background-color: #4caf50; /* Green background */
-  color: white; /* Set text color */
-  font-family: Arial, sans-serif; /* Set font family */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+/* Reset list style for the nav */
+header .header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* Heading styling */
-.header .heading {
-  flex: 0 0 30%; /* 30% width and not resizable */
-  font-size: 24px; /* Set font size */
+/* Container div */
+.header-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
 }
 
-/* Navigation menu styling */
-.header .nav-menu {
-  display: flex; /* Use Flexbox */
-  flex: 0 0 70%; /* 70% width and not resizable */
-  justify-content: flex-end; /* Align menu items to the right */
-  list-style-type: none; /* Remove bullets from list */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+/* Logo container */
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-/* Navigation menu items styling */
-.header .nav-menu li {
-  display: inline; /* Display list items inline */
+/* Make the logo smaller */
+.nav-image {
+  width: 200px; /* Adjust this value according to your desired logo size */
+  height: auto;
 }
 
-.header .nav-menu li a {
-  padding: 0 15px; /* Add some padding */
-  text-decoration: none; /* Remove underline */
-  color: white; /* Set text color */
-  font-size: 18px; /* Set font size */
+/* Nav container */
+.header nav {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: end;
+  align-items: center;
 }
 
-/* Hover effect on menu items (optional) */
-.header .nav-menu li a:hover {
-  color: #45a049; /* Change the text color when hovered */
+/* Nav items */
+.header nav ul li {
+  display: inline;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+  padding: 0 1rem; /* Add horizontal padding to space the nav menu items */
+}
+
+.header nav ul li a:hover {
+  color: #ff9800;
 }

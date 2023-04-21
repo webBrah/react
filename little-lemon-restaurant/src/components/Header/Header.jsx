@@ -1,11 +1,15 @@
-import './Header.css';
+import "./Header.css";
 
 export default function Header() {
   return (
-    <>
-      <header className="header">
+    <header className="header">
+      <div className="header-container">
         <div className="logo">
-          <h1>Little Lemon Restaurant</h1>
+          <img
+            src={require("../../assets/nav-logo.png")}
+            alt="Little Lemon logo"
+            className="nav-image"
+          ></img>
         </div>
         <nav>
           <ul>
@@ -19,11 +23,11 @@ export default function Header() {
               <a href="/blog">Blog</a>
             </li>
             <li>
-            <a href="/book" role="button">Book a table</a>
+              <a href="/book" role="button">Book a table</a>
             </li>
           </ul>
         </nav>
-      </header>
-    </>
+      </div>
+    </header>
   );
 }
