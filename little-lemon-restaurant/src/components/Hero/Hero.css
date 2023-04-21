@@ -1,0 +1,23 @@
+.call-to-action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #495e57;
+  color: white;
+  padding: 0 2rem;
+}
+
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: -3rem;
+}
+
+.hero-image-content {
+  max-width: 50%;
+  height: auto;
+}
