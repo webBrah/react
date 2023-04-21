@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero.jsx';
 import Hompage from './components/Homepage/Homepage';
 import Specials from './components/Specials/Specials';
+import Chicago from './components/Chicago/Chicago';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hompage />
       <Specials />
       <CustomersSay />
+      <Chicago />
     </>
   );
 }
