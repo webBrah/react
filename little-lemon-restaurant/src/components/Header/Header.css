@@ -19,9 +19,9 @@ header .header nav ul {
   align-items: center;
 }
 
-/* Make the logo smaller */
+/* Logo */
 .nav-image {
-  width: 200px; /* Adjust this value according to your desired logo size */
+  width: 200px;
   height: auto;
 }
 
