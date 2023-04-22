@@ -1,13 +1,27 @@
 .specials {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
 }
 
 .specials-top {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
 
+.specials-title h2 {
+  font-size: 64px;
+}
+
+.btn {
+  background-color: var(--primary-two);
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bolder;
 }

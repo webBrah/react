@@ -1,3 +1,8 @@
+.header {
+  max-width: 1200px; /* Change this value to whatever width you want */
+  margin: 0 auto; /* Center the component within its parent container */
+}
+
 /* Reset list style for the nav */
 header .header nav ul {
   list-style: none;

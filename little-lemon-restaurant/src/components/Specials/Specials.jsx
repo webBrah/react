@@ -31,10 +31,10 @@ export default function Specials(props) {
       <section className="specials">
         <div className="specials-top">
           <div className="specials-title">
-            <h2>This Week's Specials</h2>
+            <h2>This weeks specials!</h2>
           </div>
           <div className="specials-btn">
-            <button>Online Menu</button>
+            <button className='btn'>Online Menu</button>
           </div>
         </div>
 
