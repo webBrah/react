@@ -1,11 +1,12 @@
-.hero-background {
-  background-color: #495e57;
-}
-
 .hero-wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.hero-background {
+  background-color: #495e57;
+}
+
 
 .call-to-action {
   max-width: 1200px;
