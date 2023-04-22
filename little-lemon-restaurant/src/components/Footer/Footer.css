@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+.footer-logo,
+.footer-nav,
+.contact,
+.social {
+  flex: 1;
+  margin: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+}
