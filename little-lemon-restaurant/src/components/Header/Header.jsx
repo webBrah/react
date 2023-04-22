@@ -14,17 +14,26 @@ export default function Header() {
         <nav>
           <ul>
             <li>
-              <a href="/home">Homepage</a>
+              <a href="/home">Home</a>
             </li>
             <li>
-              <a href="/about">About Us</a>
+              <a href="/about">About</a>
             </li>
             <li>
-              <a href="/blog">Blog</a>
+              <a href="/blog">Menu</a>
             </li>
             <li>
+              <a href="/blog">Reservations</a>
+            </li>
+            <li>
+              <a href="/blog">Order Online</a>
+            </li>
+            <li>
+              <a href="/blog">Login</a>
+            </li>
+            {/* <li>
               <a href="/book" role="button">Book a table</a>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
