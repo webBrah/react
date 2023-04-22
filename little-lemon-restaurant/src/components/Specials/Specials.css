@@ -1,3 +1,8 @@
+.specials .card-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .specials {
   display: flex;
   flex-direction: column;
@@ -24,4 +29,12 @@
   padding: 10px;
   cursor: pointer;
   font-weight: bolder;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 100%; /* add this line to fix the issue */
 }

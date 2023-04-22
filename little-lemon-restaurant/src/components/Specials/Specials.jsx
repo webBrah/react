@@ -27,28 +27,30 @@ const menuItems = [
 
 export default function Specials(props) {
   return (
-    <>
+    <div className="specials-wrapper">
       <section className="specials">
         <div className="specials-top">
           <div className="specials-title">
-            <h2>This weeks specials!</h2>
+            <h2>This week's specials!</h2>
           </div>
           <div className="specials-btn">
-            <button className='btn'>Online Menu</button>
+            <button className="btn">Online Menu</button>
           </div>
         </div>
 
-        <div className="card">
-          {menuItems.map((item) => (
-            <Card
-              key={item.id}
-              h2={item.title}
-              h3={item.price}
-              p={item.description}
-            />
-          ))}
+        <div className="card-wrapper">
+          <div className="card">
+            {menuItems.map((item) => (
+              <Card
+                key={item.id}
+                h2={item.title}
+                h3={item.price}
+                p={item.description}
+              />
+            ))}
+          </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
