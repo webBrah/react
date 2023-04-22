@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #495e57;
+  background-color: var(--primary-one);
   color: white;
   padding: 0 2rem;
 }

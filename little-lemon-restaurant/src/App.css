@@ -38,3 +38,23 @@
 }
 
 /* Start here */
+
+/* CSS Variables */
+:root {
+  --primary-one: #495e57;
+  --primary-two: #f4ce14;
+  --secondary-one: #ee9972;
+  --secondary-two: #fbdabb;
+  --secondary-three: #edefee;
+  --secondary-four: #333333;
+}
+
+/* Fonts */
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Markazi Text', serif;
+}
+
+p {
+  font-family: 'Karla', sans-serif;
+}
