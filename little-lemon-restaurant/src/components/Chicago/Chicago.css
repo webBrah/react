@@ -1,0 +1,37 @@
+.chicago {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.chicago-text {
+  grid-column: 1 / span 1;
+}
+
+.chicago-images {
+  grid-column: 2 / span 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chicago-image {
+  width: 30%;
+  height: auto;
+  margin: 0 1rem;
+  z-index: 1;
+}
+
+.image-adrian {
+  position: relative;
+  left: 1.5rem;
+  top: -1.5rem;
+}
+
+.image-nick {
+  position: relative;
+  right: 2.5rem;
+  bottom: -1.5rem;
+}
