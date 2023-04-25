@@ -30,13 +30,13 @@ const testimonials = [
 
 export default function CustomersSay() {
   return (
-    <>
+    <section className='testimonials-wrapper'>
       <h2 className='title-testimonials'>Testimonials</h2>
-      <div className="card">
+      <div className="card-wrapper">
         {testimonials.map((item) => (
           <Card key={item.id} h3={item.name} p={item.review} />
         ))}
       </div>
-    </>
+    </section>
   );
 }

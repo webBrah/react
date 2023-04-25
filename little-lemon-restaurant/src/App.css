@@ -39,7 +39,6 @@
 
 /* Start here */
 
-
 /* CSS Variables */
 :root {
   --primary-one: #495e57;
@@ -52,8 +51,13 @@
 
 /* Fonts */
 
-h1, h2, h3, h4, h5, h6 {
-   font-family: 'Markazi Text', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Markazi Text', serif;
 }
 
 p {

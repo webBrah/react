@@ -1,3 +1,32 @@
+.testimonials-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .title-testimonials {
-    text-align: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }

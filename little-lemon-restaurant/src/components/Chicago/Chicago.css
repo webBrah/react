@@ -1,4 +1,11 @@
+.chicago-wrapper {
+  width: 100%;
+  background-color: var(--primary-two);
+}
+
 .chicago {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -6,11 +13,10 @@
 }
 
 .chicago-text {
-  grid-column: 1 / span 1;
+  padding: 5rem;
 }
 
 .chicago-images {
-  grid-column: 2 / span 1;
   position: relative;
   display: flex;
   justify-content: center;
