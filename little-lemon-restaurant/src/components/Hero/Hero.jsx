@@ -1,3 +1,4 @@
+import React from 'react';
 import './Hero.css';
 import restaurantFood from '../../assets/food/restauranfood.jpg';
 

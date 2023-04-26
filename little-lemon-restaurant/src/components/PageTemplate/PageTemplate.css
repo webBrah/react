@@ -1,0 +1,18 @@
+.page-template {
+  height: 500px; /* Set the height of the section */
+  display: flex; /* Use flexbox to center the content */
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1200px; /* Set the width of the container */
+}
+
+.page-content {
+  text-align: center; /* Center the content horizontally */
+}
+
+h2 {
+  margin: 0; /* Remove any default margin from the heading */
+}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import "./Header.css";
 
 export default function Header() {
@@ -9,30 +10,30 @@ export default function Header() {
             src={require("../../assets/nav-logo.png")}
             alt="Little Lemon logo"
             className="nav-image"
-          ></img>
+          />
         </div>
         <nav>
           <ul>
             <li>
-              <a href="/home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="/blog">Menu</a>
+              <Link to="/menu">Menu</Link>
             </li>
             <li>
-              <a href="/blog">Reservations</a>
+              <Link to="/reservations">Reservations</Link>
             </li>
             <li>
-              <a href="/blog">Order Online</a>
+              <Link to="/order">Order Online</Link>
             </li>
             <li>
-              <a href="/blog">Login</a>
+              <Link to="/login">Login</Link>
             </li>
             {/* <li>
-              <a href="/book" role="button">Book a table</a>
+              <Link to="/book" role="button">Book a table</Link>
             </li> */}
           </ul>
         </nav>
