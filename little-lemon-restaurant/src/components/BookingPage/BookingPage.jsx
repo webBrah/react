@@ -1,3 +1,10 @@
+import ReservationForm from './BookingForm';
+// import '../BookingPage/BookingPage.css'
+
 export default function BookingPage() {
-  return <p>Booking page</p>;
+  return (
+    <section className='reservation-form'>
+      <ReservationForm />
+    </section>
+  );
 }

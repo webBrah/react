@@ -3,6 +3,11 @@
   display: flex; /* Use flexbox to center the content */
   justify-content: center;
   align-items: center;
+  background-image: url('../../assets/food/food5.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8; /* Change the opacity as per your requirement */
+
 }
 
 .container {
@@ -16,3 +21,4 @@
 h2 {
   margin: 0; /* Remove any default margin from the heading */
 }
+

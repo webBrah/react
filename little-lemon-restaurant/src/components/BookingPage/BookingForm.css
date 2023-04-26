@@ -1,0 +1,59 @@
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='number'],
+input[type='date'],
+select,
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type='submit'],
+.action-button {
+  background-color: #8ac53f;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 20px;
+  width: 100%;
+}
+
+input[type='submit']:hover,
+.action-button:hover {
+  background-color: #6fa82b;
+}
+
+.reservation-form input,
+.reservation-form select {
+  width: 100%;
+}

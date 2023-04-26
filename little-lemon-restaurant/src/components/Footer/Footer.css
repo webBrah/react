@@ -36,6 +36,11 @@ ul li {
   margin: 0.5rem 0;
 }
 
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 .footer-nav ul li {
   color: white;
 }

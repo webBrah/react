@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './Footer.css';
 
 export default function Footer() {
@@ -14,12 +16,24 @@ export default function Footer() {
         <div className="footer-nav">
           <h3>Menu</h3>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Reservations</li>
-            <li>Order</li>
-            <li>Login</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/menu">Menu</Link>
+            </li>
+            <li>
+              <Link to="/reservations">Reservations</Link>
+            </li>
+            <li>
+              <Link to="/order">Order</Link>
+            </li>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
           </ul>
         </div>
         <div className="contact">
