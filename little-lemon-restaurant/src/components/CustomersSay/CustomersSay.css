@@ -23,6 +23,16 @@
   text-align: center;
 }
 
+.star-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.star-wrapper img {
+  height: 1.5rem;
+}
+
 @media (max-width: 768px) {
   .card-wrapper {
     flex-direction: column;

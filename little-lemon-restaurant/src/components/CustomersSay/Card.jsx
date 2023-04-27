@@ -6,11 +6,13 @@ function Card(props) {
   return (
     <div className="card">
       <div className="container">
-        <div className="image-wrapper">
-          <img src={starImage} alt={props.name}/>
+        <div className="image-wrapper star-wrapper">
+          <img src={starImage} alt={props.name} />
         </div>
-        <h3>{props.h3}</h3>
-        <p>{props.p}</p>
+        <div>
+          <h3 className="testimonials-content-wrapper">{props.h3}</h3>
+          <p>{props.p}</p>
+        </div>
       </div>
     </div>
   );

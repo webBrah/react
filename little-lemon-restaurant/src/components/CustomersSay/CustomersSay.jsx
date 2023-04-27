@@ -38,12 +38,7 @@ export default function CustomersSay() {
       <h2 className='title-testimonials'>Testimonials</h2>
       <div className="card-wrapper">
         {testimonials.map((item) => (
-          <Card
-            key={item.id}
-            h3={item.name}
-            p={item.review}
-            image={item.image}
-          />
+          <Card key={item.id} h3={item.name} p={item.review} />
         ))}
       </div>
     </section>

@@ -1,3 +1,4 @@
+/* BookingForm.css */
 .form-container {
   display: flex;
   align-items: center;
@@ -15,7 +16,7 @@
 label {
   font-weight: bold;
   margin-top: 10px;
-  text-align: left;
+  text-align: center; /* Updated to center */
   width: 100%;
 }
 
@@ -26,7 +27,7 @@ input[type='number'],
 input[type='date'],
 select,
 textarea {
-  padding: 10px;
+  padding: 15px; /* Increased padding for taller inputs */
   margin-top: 5px;
   border: none;
   border-radius: 5px;
@@ -36,9 +37,9 @@ textarea {
   box-sizing: border-box;
 }
 
-input[type='submit'],
+button[type='submit'],
 .action-button {
-  background-color: #8ac53f;
+  background-color: var(--primary-one);
   color: #fff;
   padding: 10px;
   border-radius: 5px;
@@ -48,12 +49,17 @@ input[type='submit'],
   width: 100%;
 }
 
-input[type='submit']:hover,
+button[type='submit']:hover,
 .action-button:hover {
-  background-color: #6fa82b;
+  background-color: var(--primary-two);
 }
 
 .reservation-form input,
 .reservation-form select {
   width: 100%;
+}
+
+/* Added style for error messages */
+.error {
+  color: red;
 }
