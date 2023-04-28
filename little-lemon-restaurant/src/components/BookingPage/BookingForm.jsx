@@ -1,103 +1,60 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../BookingPage/BookingForm.css';
 
 function BookingForm() {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [numPeople, setNumPeople] = useState('');
-  const [date, setDate] = useState('');
-  const [time, setTime] = useState('17:00');
-  const [occasion, setOccasion] = useState('None');
-  const [seating, setSeating] = useState('None');
-  const [comments, setComments] = useState('');
-  const [errors, setErrors] = useState({});
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    numPeople: '',
+    date: '',
+    time: '17:00',
+    occasion: 'None',
+    seating: 'None',
+    comments: '',
+  });
 
+  const [isDirty, setIsDirty] = useState({});
+  const [errors, setErrors] = useState({});
   const availableTimes = ['17:00', '18:00', '19:00', '20:00', '21:00'];
   const navigate = useNavigate();
 
-  const handleFirstNameChange = (event) => {
-    setFirstName(event.target.value);
-  };
+  const handleChange = useCallback((event) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  }, []);
 
-  const handleLastNameChange = (event) => {
-    setLastName(event.target.value);
-  };
+  const handleFocus = useCallback((event) => {
+    setIsDirty((prevIsDirty) => ({
+      ...prevIsDirty,
+      [event.target.name]: true,
+    }));
+  }, []);
 
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handlePhoneChange = (event) => {
-    setPhone(event.target.value);
-  };
-
-  const handleNumPeopleChange = (event) => {
-    setNumPeople(event.target.value);
-  };
-
-  const handleDateChange = (event) => {
-    setDate(event.target.value);
-  };
-
-  const handleTimeChange = (event) => {
-    setTime(event.target.value);
-  };
-
-  const handleOccasionChange = (event) => {
-    setOccasion(event.target.value);
-  };
-
-  const handleSeatingChange = (event) => {
-    setSeating(event.target.value);
-  };
-
-  const handleCommentsChange = (event) => {
-    setComments(event.target.value);
-  };
+  const handleBlur = useCallback(
+    (event) => {
+      const { name, value, required } = event.target;
+      if (isDirty[name] && required && value === '') {
+        setErrors((prevErrors) => ({
+          ...prevErrors,
+          [name]: `${name} is a required field!`,
+        }));
+      } else {
+        setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
+      }
+    },
+    [isDirty]
+  );
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const validationErrors = {};
-    if (!firstName) {
-      validationErrors.firstName = 'Please enter your first name';
-    }
-    if (!lastName) {
-      validationErrors.lastName = 'Please enter your last name';
-    }
-    if (!email) {
-      validationErrors.email = 'Please enter your email';
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      validationErrors.email = 'Please enter a valid email';
-    }
-    if (!phone) {
-      validationErrors.phone = 'Please enter your phone number';
-    } else if (!/^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$/.test(phone)) {
-      validationErrors.phone = 'Please enter a valid phone number';
-    }
-    if (!numPeople) {
-      validationErrors.numPeople = 'Please enter the number of people';
-    } else if (numPeople < 1) {
-      validationErrors.numPeople = 'Please enter a valid number of people';
-    }
-    if (!date) {
-      validationErrors.date = 'Please select a date';
-    }
-    if (!time) {
-      validationErrors.time = 'Please select a time';
-    }
-    if (!seating || seating === 'None') {
-      validationErrors.seating = 'Please select a seating option';
-    }
-    if (!occasion || occasion === 'None') {
-      validationErrors.occasion = 'Please select an occasion';
-    }
 
-    if (!seating || seating === 'None') {
-      validationErrors.seating = 'Please select a seating option';
-    }
+    // Add your validation logic here
+    // e.g., if (!firstName) validationErrors.firstName = 'Please enter your first name';
+
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
@@ -108,109 +65,157 @@ function BookingForm() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      style={{
-        display: 'grid',
-        maxWidth: '500px',
-        gap: '20px',
-        margin: '0 auto',
-      }}
-    >
-      <label htmlFor="first-name">First Name</label>
-      <input
-        type="text"
-        id="first-name"
-        value={firstName}
-        onChange={handleFirstNameChange}
-      />
-      {errors.firstName && <div className="error">{errors.firstName}</div>}
-      <label htmlFor="last-name">Last Name</label>
-      <input
-        type="text"
-        id="last-name"
-        value={lastName}
-        onChange={handleLastNameChange}
-      />
-      {errors.lastName && <div className="error">{errors.lastName}</div>}
+    <div className="booking-form">
+      <h2>Book a table</h2>
+      <form onSubmit={handleSubmit}>
+        {/* First Name field */}
+        <label htmlFor="firstName">First Name:</label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          value={formData.firstName}
+          onChange={handleChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
+        />
+        {errors.firstName && <p className="error">{errors.firstName}</p>}
 
-      <label htmlFor="email">Email</label>
-      <input
-        type="email"
-        id="email"
-        value={email}
-        onChange={handleEmailChange}
-      />
-      {errors.email && <div className="error">{errors.email}</div>}
+        {/* Last Name field */}
+        <label htmlFor="lastName">Last Name:</label>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          value={formData.lastName}
+          onChange={handleChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
+        />
+        {errors.lastName && <p className="error">{errors.lastName}</p>}
 
-      <label htmlFor="phone">Phone number</label>
-      <input
-        type="tel"
-        id="phone"
-        value={phone}
-        onChange={handlePhoneChange}
-        placeholder="(xxx)xxxx-xxxx"
-      />
-      {errors.phone && <div className="error">{errors.phone}</div>}
+        {/* Email field */}
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
+        />
+        {errors.email && <p className="error">{errors.email}</p>}
 
-      <label htmlFor="num-people">Number of People</label>
-      <input
-        type="number"
-        id="num-people"
-        value={numPeople}
-        onChange={handleNumPeopleChange}
-      />
-      {errors.numPeople && <div className="error">{errors.numPeople}</div>}
+        {/* Phone field */}
+        <label htmlFor="phone">Phone:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          value={formData.phone}
+          onChange={handleChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
+        />
+        {errors.phone && <p className="error">{errors.phone}</p>}
 
-      <label htmlFor="res-date">Select Date</label>
-      <input
-        type="date"
-        id="res-date"
-        value={date}
-        onChange={handleDateChange}
-      />
-      {errors.date && <div className="error">{errors.date}</div>}
+        {/* Number of People field */}
+        <label htmlFor="numPeople">Number of People:</label>
+        <input
+          type="number"
+          id="numPeople"
+          name="numPeople"
+          min="1"
+          value={formData.numPeople}
+          onChange={handleChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
+        />
+        {errors.numPeople && <p className="error">{errors.numPeople}</p>}
 
-      <label htmlFor="res-time">Select Time</label>
-      <select id="res-time" value={time} onChange={handleTimeChange}>
-        {availableTimes.map((t) => (
-          <option key={t}>{t}</option>
-        ))}
-      </select>
-      {errors.time && <div className="error">{errors.time}</div>}
+        {/* Date field */}
+        <label htmlFor="date">Date:</label>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          value={formData.date}
+          onChange={handleChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
+        />
+        {errors.date && <p className="error">{errors.date}</p>}
 
-      <label htmlFor="occasion">Occasion</label>
-      <select id="occasion" value={occasion} onChange={handleOccasionChange}>
-        <option>None</option>
-        <option>Birthday</option>
-        <option>Anniversary</option>
-        <option>Engagement</option>
-        <option>Other</option>
-      </select>
+        {/* Time field */}
+        <label htmlFor="time">Time:</label>
+        <select
+          id="time"
+          name="time"
+          value={formData.time}
+          onChange={handleChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
+        >
+          {availableTimes.map((time) => (
+            <option key={time} value={time}>
+              {time}
+            </option>
+          ))}
+        </select>
+        {errors.time && <p className="error">{errors.time}</p>}
 
-      <label htmlFor="seating">Seating Options</label>
-      <select id="seating" value={seating} onChange={handleSeatingChange}>
-        <option>None</option>
-        <option>Indoors</option>
-        <option>Outdoors (Patio)</option>
-        <option>Outdoors (Sidewalk)</option>
-      </select>
-      {errors.seating && <div className="error">{errors.seating}</div>}
+        {/* Occasion field */}
+        <label htmlFor="occasion">Occasion:</label>
+        <select
+          id="occasion"
+          name="occasion"
+          value={formData.occasion}
+          onChange={handleChange}
+        >
+          <option value="None">None</option>
+          <option value="Birthday">Birthday</option>
+          <option value="Anniversary">Anniversary</option>
+          <option value="Business">Business</option>
+          <option value="Other">Other</option>
+        </select>
 
-      <label htmlFor="comments">Additional Comments</label>
-      <textarea
-        id="comments"
-        value={comments}
-        onChange={handleCommentsChange}
-        placeholder="Additional comments"
-      ></textarea>
-      <p style={{ fontSize: '14px', fontStyle: 'italic' }}>
-        Note: You cannot edit your reservation after submission. Please
-        double-check your answer before submitting your reservation request.
-      </p>
+        {/* Seating Preference field */}
+        <label htmlFor="seating">Seating Preference:</label>
+        <select
+          id="seating"
+          name="seating"
+          value={formData.seating}
+          onChange={handleChange}
+        >
+          <option value="None">None</option>
+          <option value="Indoor">Indoor</option>
+          <option value="Outdoor">Outdoor</option>
+          <option value="Window">Window</option>
+          <option value="Bar">Bar</option>
+        </select>
 
-      <button type="submit">Submit</button>
-    </form>
+        {/* Comments field */}
+        <label htmlFor="comments">Comments:</label>
+        <textarea
+          id="comments"
+          name="comments"
+          rows="5"
+          value={formData.comments}
+          onChange={handleChange}
+        ></textarea>
+
+        {/* Submit button */}
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   );
 }
 
