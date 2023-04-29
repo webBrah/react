@@ -1,24 +1,22 @@
 .page-template {
-  height: 500px; /* Set the height of the section */
-  display: flex; /* Use flexbox to center the content */
+  height: 500px;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-image: url('../../assets/food/food5.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8; /* Change the opacity as per your requirement */
-
+  opacity: 0.8;
 }
 
 .container {
-  width: 1200px; /* Set the width of the container */
+  width: 1200px;
 }
 
 .page-content {
-  text-align: center; /* Center the content horizontally */
+  text-align: center;
 }
 
 h2 {
-  margin: 0; /* Remove any default margin from the heading */
+  margin: 0;
 }
-

@@ -36,5 +36,5 @@
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  max-width: 100%; /* add this line to fix the issue */
+  max-width: 100%;
 }

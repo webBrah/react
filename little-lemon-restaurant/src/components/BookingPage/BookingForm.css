@@ -16,7 +16,7 @@
 label {
   font-weight: bold;
   margin-top: 10px;
-  text-align: center; /* Updated to center */
+  text-align: center;
   width: 100%;
 }
 
@@ -27,7 +27,7 @@ input[type='number'],
 input[type='date'],
 select,
 textarea {
-  padding: 15px; /* Increased padding for taller inputs */
+  padding: 15px;
   margin-top: 5px;
   border: none;
   border-radius: 5px;

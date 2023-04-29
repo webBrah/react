@@ -52,13 +52,9 @@ function BookingForm() {
     event.preventDefault();
     const validationErrors = {};
 
-    // Add your validation logic here
-    // e.g., if (!firstName) validationErrors.firstName = 'Please enter your first name';
-
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      // Add logic to submit form data to an API or backend server
       console.log('Form submitted!');
       navigate('/confirmation');
     }
