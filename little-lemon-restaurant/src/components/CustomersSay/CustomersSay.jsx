@@ -1,4 +1,4 @@
-import Card from './Card';
+import CardTestimonials from './CardTestimonials';
 import './CustomersSay.css';
 
 const testimonials = [
@@ -34,11 +34,15 @@ const testimonials = [
 
 export default function CustomersSay() {
   return (
-    <section className='testimonials-wrapper'>
-      <h2 className='title-testimonials'>Testimonials</h2>
-      <div className="card-wrapper">
+    <section className="testimonials-wrapper">
+      <h2 className="title-testimonials">Testimonials</h2>
+      <div className="testimonials-card-wrapper">
         {testimonials.map((item) => (
-          <Card key={item.id} h3={item.name} p={item.review} />
+          <CardTestimonials
+            key={item.id}
+            name={item.name}
+            review={item.review}
+          />
         ))}
       </div>
     </section>
