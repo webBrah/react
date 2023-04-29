@@ -52,9 +52,10 @@ function BookingForm() {
     (event) => {
       const { name, value, required } = event.target;
       if (isDirty[name] && required && value === '') {
+        const label = event.target.labels[0].textContent;
         setErrors((prevErrors) => ({
           ...prevErrors,
-          [name]: `${name} is a required field!`,
+          [name]: `${label} is a required field!`,
         }));
       } else {
         setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
