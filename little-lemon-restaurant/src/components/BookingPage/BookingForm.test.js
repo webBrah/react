@@ -10,34 +10,34 @@ describe('BookingForm', () => {
       </Router>
     );
 
-    const firstNameInput = screen.getByLabelText('First Name');
+    const firstNameInput = screen.getByLabelText('First Name:');
     expect(firstNameInput).toBeInTheDocument();
 
-    const lastNameInput = screen.getByLabelText('Last Name');
+    const lastNameInput = screen.getByLabelText('Last Name:');
     expect(lastNameInput).toBeInTheDocument();
 
-    const emailInput = screen.getByLabelText('Email');
+    const emailInput = screen.getByLabelText('Email:');
     expect(emailInput).toBeInTheDocument();
 
-    const phoneInput = screen.getByLabelText('Phone number');
+    const phoneInput = screen.getByLabelText('Phone:');
     expect(phoneInput).toBeInTheDocument();
 
-    const numPeopleInput = screen.getByLabelText('Number of People');
+    const numPeopleInput = screen.getByLabelText('Number of People:');
     expect(numPeopleInput).toBeInTheDocument();
 
-    const dateInput = screen.getByLabelText('Select Date');
+    const dateInput = screen.getByLabelText('Date:');
     expect(dateInput).toBeInTheDocument();
 
-    const timeSelect = screen.getByLabelText('Select Time');
+    const timeSelect = screen.getByLabelText('Time:');
     expect(timeSelect).toBeInTheDocument();
 
-    const occasionSelect = screen.getByLabelText('Occasion');
+    const occasionSelect = screen.getByLabelText('Occasion:');
     expect(occasionSelect).toBeInTheDocument();
 
-    const seatingSelect = screen.getByLabelText('Seating Options');
+    const seatingSelect = screen.getByLabelText('Seating Preference:');
     expect(seatingSelect).toBeInTheDocument();
 
-    const commentsTextArea = screen.getByLabelText('Additional Comments');
+    const commentsTextArea = screen.getByLabelText('Comments:');
     expect(commentsTextArea).toBeInTheDocument();
 
     const submitButton = screen.getByRole('button', { name: /submit/i });
@@ -51,48 +51,51 @@ describe('BookingForm', () => {
       </Router>
     );
 
-    fireEvent.change(screen.getByLabelText('First Name'), {
+    fireEvent.change(screen.getByLabelText('First Name:'), {
       target: { value: 'John' },
     });
 
-    fireEvent.change(screen.getByLabelText('Last Name'), {
+    fireEvent.change(screen.getByLabelText('Last Name:'), {
       target: { value: 'Doe' },
     });
 
-    fireEvent.change(screen.getByLabelText('Email'), {
+    fireEvent.change(screen.getByLabelText('Email:'), {
       target: { value: 'john.doe@example.com' },
     });
 
-    fireEvent.change(screen.getByLabelText('Phone number'), {
-      target: { value: '(555)555-5555' },
+    fireEvent.change(screen.getByLabelText('Phone:'), {
+      target: { value: '555-555-5555' },
     });
 
-    fireEvent.change(screen.getByLabelText('Number of People'), {
+    fireEvent.change(screen.getByLabelText('Number of People:'), {
       target: { value: '3' },
     });
 
-    fireEvent.change(screen.getByLabelText('Select Date'), {
+    fireEvent.change(screen.getByLabelText('Date:'), {
       target: { value: '2023-05-15' },
     });
 
-    fireEvent.change(screen.getByLabelText('Select Time'), {
+    fireEvent.change(screen.getByLabelText('Time:'), {
       target: { value: '19:00' },
     });
 
-    fireEvent.change(screen.getByLabelText('Occasion'), {
+    fireEvent.change(screen.getByLabelText('Occasion:'), {
       target: { value: 'Birthday' },
     });
 
-    fireEvent.change(screen.getByLabelText('Seating Options'), {
-      target: { value: 'Indoors' },
+    fireEvent.change(screen.getByLabelText('Seating Preference:'), {
+      target: { value: 'Indoor' },
     });
 
-    fireEvent.change(screen.getByLabelText('Additional Comments'), {
+    fireEvent.change(screen.getByLabelText('Comments:'), {
       target: { value: 'A table near the window, please.' },
     });
 
     const submitButton = screen.getByRole('button', { name: /submit/i });
 
     fireEvent.click(submitButton);
+
+    // Replace this with your own assertion
+    expect(window.location.pathname).toEqual('/confirmation');
   });
 });
