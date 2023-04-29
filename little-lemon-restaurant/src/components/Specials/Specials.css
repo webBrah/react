@@ -38,3 +38,44 @@
   flex-wrap: wrap;
   max-width: 100%;
 }
+
+@media screen and (max-width: 767px) {
+  .specials-title h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  }
+  
+  .btn {
+  width: 100%;
+  font-size: 18px;
+  }
+  }
+
+  @media screen and (max-width: 767px) {
+    .specials-top {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    
+    .specials-title h2 {
+      font-size: 36px;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    
+    .btn {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+  }
+  

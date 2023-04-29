@@ -10,7 +10,7 @@ function Card(props) {
         <div className="card-content">
           <div className="title-row">
             <h2>{props.h2}</h2>
-            <h3>{props.h3}</h3>
+            <h3 class="price">{props.h3}</h3>
           </div>
           <p>{props.p}</p>
           <button>Order for Delivery</button>

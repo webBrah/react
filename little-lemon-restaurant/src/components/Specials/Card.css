@@ -43,17 +43,23 @@
 .title-row {
   display: flex;
   justify-content: space-between;
+  align-items: baseline; /* align the baseline of the h2 and h3 */
 }
 
 h2,
 h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  display: inline-block; /* display h2 and h3 as inline-blocks */
 }
 
 h3 {
   margin-top: 0.5rem;
   margin-bottom: 0;
+}
+
+.price {
+  color: var(--secondary-one); /* set the color of h3 */
 }
 
 p {
