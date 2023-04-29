@@ -1,0 +1,16 @@
+.hamburger-container {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-image,
+.close-image {
+  width: 30px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hamburger-container {
+    display: block;
+  }
+}

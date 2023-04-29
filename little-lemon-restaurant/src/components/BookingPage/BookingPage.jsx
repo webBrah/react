@@ -1,9 +1,12 @@
 import BookingForm from './BookingForm';
+import './BookingPage.css';
+import './BookingForm.css';
 
 export default function BookingPage() {
   return (
-    <section className="reservation-form">
+    <div className="booking-page-grid">
       <BookingForm />
-    </section>
+    </div>
   );
 }
+

@@ -30,7 +30,7 @@ export default function Header() {
             />
           </Link>
         </div>
-        <nav className={mobileMenuOpen ? 'open' : ''}>
+        <nav className={`navbar-menu ${mobileMenuOpen ? 'open' : ''}`}>
           <ul>
             {links.map(link => (
               <li key={link.path}>
@@ -42,11 +42,19 @@ export default function Header() {
           </ul>
         </nav>
         <div className="hamburger" onClick={toggleMobileMenu}>
-          <img
-            src={require('../../assets/hamburger.png')}
-            alt="Hamburger menu"
-            className="hamburger-image"
-          />
+          {mobileMenuOpen ? (
+            <img
+              src={require('../../assets/close.png')}
+              alt="Close menu"
+              className="close-image"
+            />
+          ) : (
+            <img
+              src={require('../../assets/hamburger.png')}
+              alt="Hamburger menu"
+              className="hamburger-image"
+            />
+          )}
         </div>
       </div>
     </header>

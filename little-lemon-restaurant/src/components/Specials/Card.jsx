@@ -8,8 +8,10 @@ function Card(props) {
           <img src={props.src} alt={props.alt} />
         </div>
         <div className="card-content">
-          <h2>{props.h2}</h2>
-          <h3>{props.h3}</h3>
+          <div className="title-row">
+            <h2>{props.h2}</h2>
+            <h3>{props.h3}</h3>
+          </div>
           <p>{props.p}</p>
           <button>Order for Delivery</button>
         </div>

@@ -35,9 +35,14 @@
 .card-content {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: auto auto;
   align-items: center;
   padding: 1rem;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
 }
 
 h2,
