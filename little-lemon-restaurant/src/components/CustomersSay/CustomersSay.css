@@ -29,7 +29,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  }
+}
 
 @media (max-width: 1200px) {
   .testimonials-card-wrapper {
@@ -46,5 +46,11 @@
 @media (max-width: 767px) {
   .testimonials-card-wrapper {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .title-testimonials {
+    font-size: 2.5rem;
   }
 }
