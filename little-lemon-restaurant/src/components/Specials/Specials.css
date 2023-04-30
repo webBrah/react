@@ -35,9 +35,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* align items to the top */
   margin-top: 2rem;
-}
+  }
 
 @media screen and (max-width: 767px) {
   .specials-top {

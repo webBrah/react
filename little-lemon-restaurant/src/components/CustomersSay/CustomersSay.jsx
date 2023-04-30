@@ -23,27 +23,24 @@ const testimonials = [
     review:
       "I couldn't resist trying the lemon dessert, and it was just as authentic as promised. Highly recommended!",
   },
-  {
-    id: '4',
-    image: '../../assets/star.png',
-    name: 'Sarah Lee',
-    review:
-      'The Greek salad was a delight to my taste buds. The feta cheese was definitely the star of the dish!',
-  },
 ];
 
 export default function CustomersSay() {
   return (
-    <section className="testimonials-wrapper">
-      <h2 className="title-testimonials">Testimonials</h2>
-      <div className="testimonials-card-wrapper">
-        {testimonials.map((item) => (
-          <CardTestimonials
-            key={item.id}
-            name={item.name}
-            review={item.review}
-          />
-        ))}
+    <section className="testimonials">
+      <div className="testimonials-wrapper">
+        <div className='testimonials-title'>
+        <h2 className="title-testimonials">Testimonials</h2>
+        </div>        
+        <div className="testimonials-card-wrapper">
+          {testimonials.map((item) => (
+            <CardTestimonials
+              key={item.id}
+              name={item.name}
+              review={item.review}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
