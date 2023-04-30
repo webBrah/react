@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import restaurantFood from '../../assets/food/restauranfood.jpg';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -12,12 +13,13 @@ export default function Hero() {
             <h2>Chicago</h2>
             <p className="subsection">
               We are a family owned Mediterranean restaurant, located on Maldove
-              Street in Chicago, Illinois. We focus on traditional recipes served
-              with a modern twist.
+              Street in Chicago, Illinois. We focus on traditional recipes
+              served with a modern twist.
             </p>
             <br></br>
-            {/* <Link className="action-button" to="/reservations">Reserve a table</Link> */}
-            <button className='reserve-a-table'>Reserve a table</button>
+            <Link to="/reservations">
+              <button className="reserve-a-table">Reserve a table</button>
+            </Link>
           </section>
 
           <section className="hero-image">
