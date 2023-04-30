@@ -1,7 +1,7 @@
 footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
   padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -20,6 +20,7 @@ footer {
   flex: 1;
   margin: 1rem;
   max-width: calc(25% - 2rem);
+  text-align: center; /* add center alignment */
 }
 
 .footer-logo img {
@@ -43,4 +44,25 @@ ul li a {
 
 .footer-nav ul li {
   color: white;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo,
+  .footer-nav,
+  .contact,
+  .social {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .footer-logo img {
+    max-width: 70%;
+  }
 }
