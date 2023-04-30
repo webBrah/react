@@ -5,6 +5,7 @@
   border: none;
   border-radius: 10px;
   background-color: var(--secondary-three);
+  margin: 0 auto;
 }
 
 .card {
