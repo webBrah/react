@@ -6,21 +6,21 @@
   background-image: url('../../assets/food/food5.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-.container {
-  width: 1200px;
+.title-container {
   background-color: var(--primary-one);
-  padding: 25px; 
-  z-index: 10;
+  padding: 25px;
+  border-radius: 5px;
 }
 
 .page-content {
   text-align: center;
 }
 
-h2 {
+.title-container h2 {
   margin: 0;
   color: white;
+  font-family: 'Markazi Text', serif;
 }

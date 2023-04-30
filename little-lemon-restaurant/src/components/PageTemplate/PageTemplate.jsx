@@ -4,7 +4,7 @@ import './PageTemplate.css';
 export default function PageTemplate(props) {
     return (
         <section className="page-template">
-            <div className="container">
+            <div className="title-container">
                 <div className="page-content">
                     <h2>{props.pageTitle}</h2>
                     {props.children}
