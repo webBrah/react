@@ -143,7 +143,6 @@ function BookingForm() {
             id="numPeople"
             name="numPeople"
             min="1"
-            defaultValue="1"
             value={formData.numPeople}
             onChange={handleChange}
             onFocus={handleFocus}
