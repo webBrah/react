@@ -13,4 +13,10 @@
   .hamburger-container {
     display: block;
   }
+  
+  .close-image {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
 }

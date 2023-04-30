@@ -15,7 +15,7 @@ export default function Header() {
     { title: 'Menu', path: '/menu' },
     { title: 'Reservations', path: '/reservations' },
     { title: 'Order Online', path: '/order' },
-    { title: 'Login', path: '/login' }
+    { title: 'Login', path: '/login' },
   ];
 
   return (
@@ -31,8 +31,17 @@ export default function Header() {
           </Link>
         </div>
         <nav className={`navbar-menu ${mobileMenuOpen ? 'open' : ''}`}>
+          <div className="mobile-menu-header">
+            <div className="hamburger" onClick={toggleMobileMenu}>
+              <img
+                src={require('../../assets/close.png')}
+                alt="Close menu"
+                className="close-image"
+              />
+            </div>
+          </div>
           <ul>
-            {links.map(link => (
+            {links.map((link) => (
               <li key={link.path}>
                 <Link to={link.path} onClick={() => setMobileMenuOpen(false)}>
                   {link.title}

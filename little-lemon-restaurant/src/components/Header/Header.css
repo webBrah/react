@@ -13,6 +13,7 @@
 .logo {
   display: flex;
   align-items: center;
+  margin-left: 1rem; /* added margin to move logo more to the left */
 }
 
 .nav-image {
@@ -22,6 +23,8 @@
 
 .navbar-menu {
   display: flex;
+  flex-direction: column; /* changed to column to center menu items */
+  justify-content: center; /* added to center menu items */
   gap: 1rem;
 }
 
@@ -59,14 +62,11 @@
 }
 
 @media (max-width: 768px) {
+  .header-container {
+    padding: 1rem 1.5rem; /* reduced padding for smaller screens */
+  }
   .navbar-menu {
     display: none;
-  }
-
-  .navbar-menu.open {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
     position: fixed;
     top: 0;
     right: 0;
@@ -76,6 +76,12 @@
     z-index: 1;
     padding: 1rem;
     overflow-y: scroll;
+    text-align: center; /* added to center menu items */
+  }
+
+  .navbar-menu.open {
+    display: flex;
+    flex-direction: column;
   }
 
   .navbar-menu.open ul li {
@@ -86,4 +92,3 @@
     display: block;
   }
 }
-
