@@ -11,6 +11,9 @@
 
 .container {
   width: 1200px;
+  background-color: var(--primary-one);
+  padding: 25px; 
+  z-index: 10;
 }
 
 .page-content {
@@ -19,4 +22,5 @@
 
 h2 {
   margin: 0;
+  color: white;
 }

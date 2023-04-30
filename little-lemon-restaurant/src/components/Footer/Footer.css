@@ -20,7 +20,7 @@ footer {
   flex: 1;
   margin: 1rem;
   max-width: calc(25% - 2rem);
-  text-align: center; /* add center alignment */
+  text-align: center;
 }
 
 .footer-logo img {
