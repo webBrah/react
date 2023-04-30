@@ -1,12 +1,11 @@
 import React from 'react';
 import './CardTestimonials.css';
-import starImage from '../../assets/star.png';
 
 function CardTestimonials(props) {
   return (
     <div className="card-testimonials">
       <div className="image-wrapper">
-        <img className="star-image" src={starImage} alt={props.name} />
+        <img className="testimonial-image" src={props.image} alt={props.name} /> {/* Use the image prop here */}
       </div>
       <div className="text-wrapper">
         <h3 className="testimonials-title">{props.name}</h3>
