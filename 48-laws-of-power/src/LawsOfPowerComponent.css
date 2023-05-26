@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+}
+
+.laws-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh; /* Ensures container takes up full viewport height */
+  }
+
+.law-card {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.law-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.law-summary {
+  font-size: 18px;
+}
+
+.next-law-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .law-card {
+    max-width: 80%;
+  }
+}

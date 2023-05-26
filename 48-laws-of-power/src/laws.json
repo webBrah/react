@@ -1,0 +1,244 @@
+{
+  "laws": [
+    {
+      "id": "law1",
+      "law": "Never Outshine the Master",
+      "summary": "Avoid overshadowing those in power, as it may provoke their envy and resentment."
+    },
+    {
+      "id": "law2",
+      "law": "Never Put Too Much Trust in Friends",
+      "summary": "Be cautious of trusting others completely, as they may betray or disappoint you."
+    },
+    {
+      "id": "law3",
+      "law": "Conceal Your Intentions",
+      "summary": "Keep your plans and motives hidden to maintain an advantage over others."
+    },
+    {
+      "id": "law4",
+      "law": "Always Say Less Than Necessary",
+      "summary": "Avoid revealing too much information, as it can be used against you."
+    },
+    {
+      "id": "law5",
+      "law": "So Much Depends on Reputation",
+      "summary": "Cultivate a strong reputation, as it can enhance your influence and protect you from attacks."
+    },
+    {
+      "id": "law6",
+      "law": "Court Attention at All Costs",
+      "summary": "Stand out from the crowd and draw attention to yourself to gain power."
+    },
+    {
+      "id": "law7",
+      "law": "Get Others to Do the Work for You",
+      "summary": "Delegate tasks and responsibilities to others, while you take credit for their achievements."
+    },
+    {
+      "id": "law8",
+      "law": "Make Other People Come to You",
+      "summary": "Create an aura of importance that compels others to seek your favor."
+    },
+    {
+      "id": "law9",
+      "law": "Win Through Actions, Never Through Argument",
+      "summary": "Demonstrate your capabilities through actions rather than engaging in fruitless debates."
+    },
+    {
+      "id": "law10",
+      "law": "Infection",
+      "summary": "Avoid negative and toxic individuals, as their influence can harm your power and reputation."
+    },
+    {
+      "id": "law11",
+      "law": "Learn to Keep People Dependent on You",
+      "summary": "Make yourself indispensable to others, ensuring they rely on you for their needs."
+    },
+    {
+      "id": "law12",
+      "law": "Use Selective Honesty and Generosity",
+      "summary": "Deploy honesty and generosity strategically to gain advantages in your interactions."
+    },
+    {
+      "id": "law13",
+      "law": "When Asking for Help, Appeal to Self-Interest",
+      "summary": "Frame your requests in a way that highlights the benefits others will gain by assisting you."
+    },
+    {
+      "id": "law14",
+      "law": "Pose as a Friend, Work as a Spy",
+      "summary": "Appear friendly while secretly gathering information that can be used to your advantage."
+    },
+    {
+      "id": "law15",
+      "law": "Crush Your Enemy Totally",
+      "summary": "Avoid leaving remnants of resistance, as they may rise again to challenge your power."
+    },
+    {
+      "id": "law16",
+      "law": "Use Absence to Increase Respect and Honor",
+      "summary": "Withdraw from the spotlight occasionally to create a sense of importance and mystery."
+    },
+    {
+      "id": "law17",
+      "law": "Keep Others in Suspended Terror",
+      "summary": "Instill a level of uncertainty and unpredictability to keep others on their toes."
+    },
+    {
+      "id": "law18",
+      "law": "Do Not Build Fortresses to Protect Yourself",
+      "summary": "Avoid isolating yourself, as it breeds resentment and undermines your power."
+    },
+    {
+      "id": "law19",
+      "law": "Know Who You're Dealing With",
+      "summary": "Understand the people you interact with to anticipate their actions and counteract them effectively."
+    },
+    {
+      "id": "law20",
+      "law": "Do Not Commit to Anyone",
+      "summary": "Maintain flexibility and avoid being tied down to one person or group."
+    },
+    {
+      "id": "law21",
+      "law": "Play a Sucker to Catch a Sucker",
+      "summary": "Lure others into underestimating you to gain an advantage over them."
+    },
+    {
+      "id": "law22",
+      "law": "Use the Surrender Tactic",
+      "summary": "Give the illusion of yielding to the desires of others while manipulating the situation to your benefit."
+    },
+    {
+      "id": "law23",
+      "law": "Concentrate Your Forces",
+      "summary": "Direct your efforts and resources strategically to maximize their impact."
+    },
+    {
+      "id": "law24",
+      "law": "Play the Perfect Courtier",
+      "summary": "Observe the social dynamics and power structures within a group, and adapt your behavior accordingly."
+    },
+    {
+      "id": "law25",
+      "law": "Re-Create Yourself",
+      "summary": "Continually reinvent yourself to stay relevant and adaptable in changing circumstances."
+    },
+    {
+      "id": "law26",
+      "law": "Keep Your Hands Clean",
+      "summary": "Avoid direct involvement in controversial or unethical actions that could harm your reputation."
+    },
+    {
+      "id": "law27",
+      "law": "Play on People's Need to Believe",
+      "summary": "Exploit people's desire for something to believe in to gain their loyalty and support."
+    },
+    {
+      "id": "law28",
+      "law": "Enter Action with Boldness",
+      "summary": "Act decisively and boldly, as hesitation can lead to missed opportunities and weakened power."
+    },
+    {
+      "id": "law29",
+      "law": "Plan All the Way to the End",
+      "summary": "Anticipate potential obstacles and outcomes, and plan your actions accordingly."
+    },
+    {
+      "id": "law30",
+      "law": "Make Your Accomplishments Seem Effortless",
+      "summary": "Downplay the effort behind your achievements to maintain an air of natural talent."
+    },
+    {
+      "id": "law31",
+      "law": "Control the Options",
+      "summary": "Manipulate the choices available to others to ensure they select the one that benefits you."
+    },
+    {
+      "id": "law32",
+      "law": "Be the Master of Your Own Image",
+      "summary": "Craft and control your public image to shape others' perceptions of you."
+    },
+    {
+      "id": "law33",
+      "law": "Discover Each Man's Thumbscrew",
+      "summary": "Identify others' weaknesses and vulnerabilities to gain leverage over them."
+    },
+    {
+      "id": "law34",
+      "law": "Be Royal in Your Own Fashion",
+      "summary": "Define your own standards of behavior and live by them, disregarding conventional norms."
+    },
+    {
+      "id": "law35",
+      "law": "Master the Art of Timing",
+      "summary": "Seize opportunities at the right moment to maximize their impact."
+    },
+    {
+      "id": "law36",
+      "law": "Disdain Things You Cannot Have",
+      "summary": "Display indifference towards what you cannot obtain to maintain your power and dignity."
+    },
+    {
+      "id": "law37",
+      "law": "Create Compelling Spectacles",
+      "summary": "Stage grand gestures and events to captivate and control the attention of others."
+    },
+    {
+      "id": "law38",
+      "law": "Think as You Like, but Behave Like Others",
+      "summary": "Adapt your behavior to fit social expectations, while preserving your true thoughts and beliefs."
+    },
+    {
+      "id": "law39",
+      "law": "Stir Up Waters to Catch Fish",
+      "summary": "Create chaos or conflict to exploit the opportunities that arise from it."
+    },
+    {
+      "id": "law40",
+      "law": "Despise the Free Lunch",
+      "summary": "Be wary of accepting favors or gifts, as they may come with hidden obligations and expectations."
+    },
+    {
+      "id": "law41",
+      "law": "Avoid Stepping into a Great Man's Shoes",
+      "summary": "Do not try to replace or emulate a powerful figure directly, as it invites comparison and resistance."
+    },
+    {
+      "id": "law42",
+      "law": "Strike the Shepherd and the Sheep Will Scatter",
+      "summary": "Target the influential figures within a group to weaken their followers' loyalty."
+    },
+    {
+      "id": "law43",
+      "law": "Work on the Hearts and Minds of Others",
+      "summary": "Appeal to people's emotions and desires to sway their opinions and gain their support."
+    },
+    {
+      "id": "law44",
+      "law": "Disarm and Infuriate with the Mirror Effect",
+      "summary": "Reflect others' behavior and attitudes back at them to disarm and manipulate them."
+    },
+    {
+      "id": "law45",
+      "law": "Preach the Need for Change, but Never Reform Too Much at Once",
+      "summary": "Advocate for change to gain support, but implement it gradually to avoid resistance."
+    },
+    {
+      "id": "law46",
+      "law": "Never Appear Too Perfect",
+      "summary": "Display minor flaws or weaknesses to appear more relatable and less threatening to others."
+    },
+    {
+      "id": "law47",
+      "law": "Do Not Go Past the Mark You Aimed For",
+      "summary": "Avoid overreaching in your pursuits, as it can lead to backlash and loss of power."
+    },
+    {
+      "id": "law48",
+      "law": "Assume Formlessness",
+      "summary": "Adapt your strategies and actions to fit the circumstances, remaining flexible and elusive."
+    }
+  ]
+}
