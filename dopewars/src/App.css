@@ -1,0 +1,65 @@
+.game-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.game-title {
+  text-align: center;
+}
+
+.game-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.game-info {
+  flex: 0 0 40%;
+}
+
+.game-actions {
+  margin-top: 20px;
+}
+
+.game-market {
+  flex: 0 0 40%;
+}
+
+.game-inventory {
+  flex: 0 0 40%;
+  margin-top: 20px;
+}
+
+.game-turn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.game-travel {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.city-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.city-buttons button {
+  margin: 5px;
+}
+
+@media (max-width: 600px) {
+  .game-content {
+    flex-direction: column;
+  }
+
+  .game-info,
+  .game-market,
+  .game-inventory {
+    flex: 1 1 auto;
+    margin-top: 0;
+  }
+}
