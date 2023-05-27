@@ -1,22 +1,38 @@
-h1 {
-    text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.gradient-background {
+  background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
 }
 
 .laws-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    min-height: 100vh; /* Ensures container takes up full viewport height */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
 
 .law-card {
-  background-color: #f2f2f2;
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .law-title {
@@ -27,9 +43,18 @@ h1 {
 
 .law-summary {
   font-size: 18px;
+  color: #333;
 }
 
-.next-law-button {
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+}
+
+.law-button {
+  flex: 1;
   background-color: #4caf50;
   color: #fff;
   border: none;
@@ -37,6 +62,12 @@ h1 {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.law-button:hover {
+  background-color: #45a049;
 }
 
 @media (max-width: 768px) {
